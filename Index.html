@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Avengers DB</title>
+    <!---JQuery--->  <!---First of all we good need to add JQuery, only then we will be able to get JQuery Mobile.--->
+    <!---JQuery Mobile--->
+    <!---JQuery Mobile style--->
+    <script src="js/lib/jquery-2.1.4.js"></script>
+    <script src="js/lib/jquery.mobile-1.4.5.js"></script>
+
+    <script src="js/lib/jquery.validate.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/lib/jquery.mobile-1.4.5.css">
+
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+
+</head>
+<body>
+<div data-role="page" id="HJpageHome">
+    <header style="background-color:black; color:White;" data-role="header" data-theme="a" data-position="fixed">
+        <h1>HJ Feedback A1</h1>
+        <div style="border:1px solid black;" data-role="navbar" data-iconpos="top">
+            <ul>
+                <li><a href="#HJpageHome" data-icon="home" data-theme="a" class="ui-btn-active ui-state-persist">Home</a></li>
+                <li><a href="#HJAddFeedbackPage" data-icon="plus" data-theme="a" >Add</a></li>
+                <li><a href="#HJViewFeedbackPage" data-icon="grid" data-theme="a" >Reviews</a></li>
+                <li><a href="#HJpageSettings" data-icon="gear" data-theme="a" >Settings</a></li>
+            </ul>
+        </div>
+    </header>
+    <section data-role="content">
+
+        <h2 align="center">Hargun Pal Singh Jassal's Feedback A1 App</h2>
+        <p>Welcome to Hargun Pal Singh Jassal's Feedback A1 app.</p>
+        <div align="center">
+            <img src="img/avengers.jpg" width="80%" alt="Avengers">
+        </div>
+
+      <p>Please feel free to contact me if you have any suggestions!</p>
+
+        <a href="#"><input type="button" value="Call: 519.748.5220"></a>
+        <a href="#"><input type="button" value="HJassal-cc@conestogac.on.ca"></a>
+        <p>Website</p>
+        <a href="#"><input type="button" value="Conestoga College"></a>
+
+    </section>
+
+    <footer style=" padding:20px; background-color:BLack; Color:White;" data-role="footer" data-theme="a" data-position="fixed">
+        <center> &copy; 2019 Hargun Pal Singh Jassal</center>
+    </footer>
+
+</div>
+
+<!---Add--->
+
+<div data-role="page" id="HJAddFeedbackPage">
+    <header style="background-color:#000000; Color:White;" data-role="header" data-theme="a" data-position="fixed">
+        <h1>Add a Feedback</h1>
+        <div style="border:1px solid black;" data-role="navbar" data-iconpos="top">
+            <ul>
+                <li><a href="#HJpageHome" data-icon="home" data-theme="a">Home</a></li>
+                <li><a href="#HJAddFeedbackPage" data-icon="plus" data-theme="a" class="ui-btn-active ui-state-persist">Add</a></li>
+                <li><a href="#HJViewFeedbackPage" data-icon="grid" data-theme="a" >Reviews</a></li>
+                <li><a href="#HJpageSettings" data-icon="gear" data-theme="a" >Settings</a></li>
+            </ul>
+        </div>
+    </header>
+    <section data-role="content">
+
+        <form style="padding: 10px;">
+            <label>Business Name:</label>
+            <input type="text">
+
+ <label>Reviewer Email:</label>
+            <input type="text">
+
+
+            <label>Reviewer Comments:</label>
+            <textarea></textarea>
+
+            <label>Overall Ratings(1-100):</label>
+            <input type="text">
+
+            <input class="ui-btn-active ui-state-persist" type="submit" value="Save">
+
+        </form>
+    </section>
+
+    <footer style=" padding:20px; background-color:BLack; Color:White;" data-role="footer" data-theme="a" data-position="fixed">
+        <center> &copy; 2019 Hargun Pal Singh Jassal</center>
+    </footer>
+</div>
+
+<!--          Fiends/Enemies-->
+
+<div data-role="page" id="HJViewFeedbackPage">
+    <header style="background-color:black; color:White;" data-role="header" data-theme="a" data-position="fixed">
+        <h1>List of reviews</h1>
+        <div style="border:1px solid black;" data-role="navbar" data-iconpos="top">
+            <ul>
+                <li><a href="#HJpageHome" data-icon="home" data-theme="a">Home</a></li>
+                <li><a href="#HJAddFeedbackPage" data-icon="plus" data-theme="a" >Add</a></li>
+                <li><a href="#HJViewFeedbackPage" data-icon="grid" data-theme="a" class="ui-btn-active ui-state-persist">Reviews</a></li>
+                <li><a href="#HJpageSettings" data-icon="gear" data-theme="a" >Settings</a></li>
+
+            </ul>
+        </div>
+    </header>
+    <section data-role="content" style="margin:20px;">
+        <a style="text-decoration:none; color:black;" href="#HJEditFeedbackPage"><div data-role="listview" style=" background-color:#3a383808; border:1px solid #1f1f1f63; margin:8px; width:100%; padding:10px;">
+            <h2>Business Name:Car-World</h2>
+            <p>Reviewer Email:hj@spy.com<br>
+            Comments: Great Customer Services!<br>
+            Overall Rating: 90%<br></p>
+        </div>
+        </a>
+        <a style="text-decoration:none; color:black;" href="#HJEditFeedbackPage"><div style=" background-color:#3a383808; border:1px solid #1f1f1f63; margin:8px; width:100%; padding:10px;">
+            <h2>Business Name:HJ-Taxi</h2>
+            <p>Reviewer Email:hj@spy.com<br>
+                Comments: On time services!<br>
+                Overall Rating: 100%<br></p>
+        </div></a>
+
+
+    </section>
+
+    <footer style=" padding:20px; background-color:BLack; Color:White;" data-role="footer" data-theme="a" data-position="fixed">
+        <center> &copy; 2019 Hargun Pal Singh Jassal</center>
+    </footer>
+
+</div>
+
+<!--         HJEditFeedbackPage-->
+
+<div data-role="page" id="HJEditFeedbackPage">
+    <header style="background-color:black; color:White;" data-role="header" data-theme="a" data-position="fixed">
+        <h1>List of reviews</h1>
+        <div style="border:1px solid black;" data-role="navbar" data-iconpos="top">
+            <ul>
+                <li><a href="#HJpageHome" data-icon="home" data-theme="a">Home</a></li>
+                <li><a href="#HJAddFeedbackPage" data-icon="plus" data-theme="a" >Add</a></li>
+                <li><a href="#HJViewFeedbackPage" data-icon="grid" data-theme="a" class="ui-btn-active ui-state-persist">Reviews</a></li>
+                <li><a href="#HJpageSettings" data-icon="gear" data-theme="a" >Settings</a></li>
+
+            </ul>
+        </div>
+    </header>
+    <section data-role="content" style="margin:20px;">
+      <div data-role="listview" style=" background-color:#3a383808; border:1px solid #1f1f1f63; margin:8px; width:100%; padding:10px;">
+          <form style="padding: 10px;">
+              <label>Business Name:</label>
+              <input type="text" value="Car-World">
+
+              <label>Reviewer Email:</label>
+              <input type="text" value="hj@spy.com">
+
+
+              <label>Reviewer Comments:</label>
+              <textarea>Great Customer Services!</textarea>
+
+              <label>Overall Ratings(1-100):</label>
+              <input type="text" value="80">
+
+              <input style="background-color:yellow; color:black;" class="ui-btn-active ui-state-persist" type="submit" value="Cancel">
+              <input style="background-color:black; color:white;" class="ui-btn-active ui-state-persist" type="submit" value="Delete">
+              <input style="background-color:Black; color:White;" class="ui-btn-active ui-state-persist" type="submit" value="Update">
+
+          </form>
+        </div>
+
+
+
+    </section>
+
+    <footer style=" padding:20px; background-color:BLack; Color:White;" data-role="footer" data-theme="a" data-position="fixed">
+        <center> &copy; 2019 Hargun Pal Singh Jassal</center>
+    </footer>
+
+</div>
+
+<!--         Settings-->
+
+<div data-role="page" id="HJpageSettings">
+    <header style="background-color:black; color:White;" data-role="header" data-theme="a" data-position="fixed">
+        <h1>Home</h1>
+        <div style="border:1px solid black;" data-role="navbar" data-iconpos="top">
+            <ul>
+                <li><a href="#HJpageHome" data-icon="home" data-theme="a">Home</a></li>
+                <li><a href="#HJAddFeedbackPage" data-icon="plus" data-theme="a" >Add</a></li>
+                <li><a href="#HJViewFeedbackPage" data-icon="grid" data-theme="a" >Reviews</a></li>
+                <li><a href="#HJpageSettings" data-icon="gear" data-theme="a" class="ui-btn-active ui-state-persist">Settings</a></li>
+
+            </ul>
+        </div>
+    </header>
+    <section data-role="content">
+
+        <form>
+            <label>Default reviewer Email:</label>
+            <input type="text">
+            <input class="ui-btn-active ui-state-persist" type="submit" value="Save Defaults">
+            <input class="ui-btn-active ui-state-persist" type="submit" value="Clear Database">
+        </form>
+    </section>
+
+    <footer style=" padding:20px; background-color:BLack; Color:White;" data-role="footer" data-theme="a" data-position="fixed">
+        <center> &copy; 2019 Hargun Pal Singh Jassal</center>
+    </footer>
+</div>
+
+<!--          Contact-->
+
+<!--<div data-role="page" id="HJpageContact">-->
+<!--    <header data-role="header" data-theme="a" data-position="fixed">-->
+<!--        <h1>Home</h1>-->
+<!--    </header>-->
+<!--    <section data-role="content">-->
+<!--        <div data-role="navbar" data-iconpos="top">-->
+<!--            <ul>-->
+<!--                <li><a href="#HJpageHome" data-icon="home" data-theme="a">Home</a></li>-->
+<!--                <li><a href="#HJpageAdd" data-icon="plus" data-theme="a" >Add</a></li>-->
+<!--                <li><a href="#HJpageFriends" data-icon="grid" data-theme="a" >Fiends/Enimies</a></li>-->
+<!--                <li><a href="#HJpageSettings" data-icon="gear" data-theme="a" class="ui-btn-active ui-state-persist">Settings</a></li>-->
+<!--                <li><a href="#HJpageContact" data-icon="star" data-theme="a" >Contact</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </section>-->
+
+<!--    <footer data-role="footer" data-theme="a" data-position="fixed"></footer>-->
+
+<!--</div>-->
+
+<!---Hidden--->
+<!---DetailPage--->
+<div data-role="page" id="HJpageDetail">
+    <header data-role="header" data-theme="a" data-position="fixed">
+        <h1>Home</h1>
+    </header>
+    <section data-role="content">
+        <div style="border:1px solid black;" data-role="navbar" data-iconpos="top">
+            <ul>
+                <li><a href="#HJpageHome" data-icon="home" data-theme="a" >Home</a></li>
+                <li><a href="#HJAddFeedbackPage" data-icon="plus" data-theme="a" >Add</a></li>
+                <li><a href="#HJViewFeedbackPage" data-icon="grid" data-theme="a" class="ui-btn-active ui-state-persist">Reviews</a></li>
+                <li><a href="#HJpageSettings" data-icon="gear" data-theme="a" >Settings</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer style=" padding:20px; background-color:BLack; Color:White;" data-role="footer" data-theme="a" data-position="fixed">
+        <center> &copy; 2019 Hargun Pal Singh Jassal</center>
+    </footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,2 @@
+This is a demo Readme file, used for the instructions, on how to use the application.
+Here, the person is getting link to access the application, which is live and can be seen by any user (having the link).

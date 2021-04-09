@@ -1,0 +1,6 @@
+//This is an issues list.
+● As it is a Mobile application Demo uploaded by me.
+So, if the link of live website is being opened in a Laptop/PC device (i.e. a Large screen device), then they may see a different and weird layout.
+
+A fix to this situation is, while going to developer mode/ right click on the screen and go to inspect. Then go to toggle device Toolbar.
+Here, we can make the page to view in a desired mobile device size ratio.
